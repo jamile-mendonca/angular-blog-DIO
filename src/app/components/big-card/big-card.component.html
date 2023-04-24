@@ -1,19 +1,14 @@
 <div class="container__big-card">
   <div class="big-card__photo">
-    <img
-      src="https://imgs.search.brave.com/xf3JuO_R4NzLbJRd7n-WOBxm4AvnaG6yZqEJ1o6sHcg/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5s/UzluZEtnVVB0MXBW/OTRadUJsRklBSGFF/SyZwaWQ9QXBp"
-      alt="" height="200px">
+    <img src="{{photoCover}}" alt="" height="200px">
   </div>
 
   <div class="big-card__title">
-    <h1><a href="#">Saiu a nova versão do Angular </a></h1>
+    <h1><a [routerLink]="['content', Id]">{{cardTitle }}</a></h1>
   </div>
   <div class="big-card__description">
 
-    <p> <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolores animi aliquam, quaerat
-        fugit modi
-        consequatur ratione autem et repellat atque fugiat ab saepe obcaecati, sunt expedita minus? Exercitationem,
-        laboriosam. </a></p>
+    <p> <a [routerLink]="['content', Id]">{{cardDescription}}</a></p>
 
   </div>
 </div>

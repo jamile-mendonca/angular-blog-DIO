@@ -5,7 +5,7 @@
 
 .container__smal-card-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .small-card__photo>img {
